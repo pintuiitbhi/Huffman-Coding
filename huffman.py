@@ -1,4 +1,3 @@
-import operator
 import heapq
 
 def frequency(file1):
