@@ -1,6 +1,7 @@
 import heapq
 
 def frequency(file1):
+	dicti={}
 	for line in file1:
 
 		for i in range(len(line)):
@@ -30,7 +31,6 @@ def encode(text):
 
 if __name__ == "__main__":
 
-	dicti={}
 	filename="hello.txt"
 	file=open(filename,'r')
 
@@ -39,7 +39,7 @@ if __name__ == "__main__":
 	#sorted_dicti=sorted(dicti.items(),key=operator.itemgetter(1))
 	print(freq)
 	print("...........................")
-	encoded=encode(dicti)
+	encoded=encode(freq)
 	
 	print(encoded)
 	print("...........................")
